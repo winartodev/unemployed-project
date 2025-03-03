@@ -75,3 +75,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ignore files in _SAVED_DATA folder
+/[Aa]ssets/Plugins/HierarchyPro/Editor/_SAVED_DATA.meta
+/[Aa]ssets/Plugins/HierarchyPro/Editor/_SAVED_DATA/*
