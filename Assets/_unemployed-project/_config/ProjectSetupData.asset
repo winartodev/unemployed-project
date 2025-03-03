@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa132504fc08437aa9d43725fa64c3ae, type: 3}
+  m_Name: ProjectSetupData
+  m_EditorClassIdentifier: 
+  m_Folders:
+  - m_Name: _config
+    m_SubFolders:
+    - InputSystem
+    - URP
+    - AddressableGroups
+  - m_Name: Audio
+    m_SubFolders:
+    - Music
+    - SFX
+  - m_Name: Arts
+    m_SubFolders:
+    - Textures
+    - Models
+    - Materials
+    - Shaders
+  - m_Name: Sprites
+    m_SubFolders:
+    - UI
+    - Icons
+  - m_Name: Scripts
+    m_SubFolders:
+    - Editor
+    - Runtime
+  - m_Name: Scenes
+    m_SubFolders:
+    - UI
+    - Gameplay
+  - m_Name: Prefabs
+    m_SubFolders:
+    - UI
+    - Characters
+    - Environment
+    - Props
+  - m_Name: Materials
+    m_SubFolders:
+    - UI
+    - Environment
+    - Characters
+  - m_Name: Animations
+    m_SubFolders:
+    - Characters
+    - Environment
+    - UI
+  - m_Name: Dialogue
+    m_SubFolders:
+    - TextFiles
+    - ScriptableObjects
+    - Localization
+    - Audio
+  - m_Name: Fonts
+    m_SubFolders: []
+  - m_Name: Resources
+    m_SubFolders: []
+  - m_Name: StreamingAssets
+    m_SubFolders: []
+  - m_Name: Timeline
+    m_SubFolders: []
+  - m_Name: Documentation
+    m_SubFolders: []
+  m_BuiltInPackages:
+  - m_PackageName: com.unity.2d.animation
+  - m_PackageName: com.unity.cinemachine
+  - m_PackageName: com.unity.render-pipelines.universal
+  - m_PackageName: com.unity.inputsystem
+  m_ExternalPackages:
+  - m_AssetName: Odin Inspector and Serializer
+    m_Extension: 1
+    m_FolderPath: Sirenix/Editor ExtensionSystem
+  - m_AssetName: DOTween HOTween v2
+    m_Extension: 1
+    m_FolderPath: Demigiant/Editor ExtensionsAnimation
+  - m_AssetName: Editor Console Pro
+    m_Extension: 1
+    m_FolderPath: FlyingWorm/Editor ExtensionsSystem
+  - m_AssetName: Selection History
+    m_Extension: 1
+    m_FolderPath: Staggart Creations/Editor ExtensionsUtilities
+  - m_AssetName: Hierarchy PRO
+    m_Extension: 1
+    m_FolderPath: The AAA/Editor ExtensionsSystem
