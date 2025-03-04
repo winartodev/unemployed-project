@@ -1,0 +1,19 @@
+{
+    "name": "UnemployedProject.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ab253fb1d1f0bbc4a93ccb88d76e6a45",
+        "GUID:9af6f7f1fd0583f43b3fb0ad468de099"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

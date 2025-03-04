@@ -1,0 +1,19 @@
+{
+    "name": "UnemployedProject.Runtime",
+    "rootNamespace": "UnemployedProject.Runtime",
+    "references": [
+        "GUID:0adde6eebb9343149a035e98ee0d9737",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:9af6f7f1fd0583f43b3fb0ad468de099",
+        ""
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
