@@ -1,6 +1,7 @@
 ﻿using Sirenix.OdinInspector;
 
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace UnemployedProject.Runtime
 {
@@ -20,18 +21,55 @@ namespace UnemployedProject.Runtime
 
         #region Methods
 
-        protected override void HandleInput()
+        protected override void SubscribeInput()
         {
-            if (Input.GetKeyDown(KeyCode.W))
+            if (PlayerInput == null)
+            {
+                return;
+            }
+
+            PlayerInput.actions[InputActionMove].performed += OnPerformedAction;
+        }
+
+        protected override void UnsubscribeInput()
+        {
+            if (PlayerInput == null)
+            {
+                return;
+            }
+
+            PlayerInput.actions[InputActionMove].performed -= OnPerformedAction;
+        }
+
+        protected override void OnPerformedAction(InputAction.CallbackContext ctx)
+        {
+            if (!ctx.performed)
+            {
+                return;
+            }
+
+            var input = ctx.ReadValue<Vector2>();
+
+            if (IsEligibleToWalk(input))
             {
                 IsWalking = true;
-                m_CharacterAnimation.StartWalking(IsWalking);
             }
-            else if (Input.GetKeyUp(KeyCode.W))
+            else
             {
+                input = Vector2.zero;
                 IsWalking = false;
-                m_CharacterAnimation.StartWalking(IsWalking);
             }
+
+            m_CharacterAnimation.SetWalkingVelocity(input.y);
+        }
+
+        private bool IsEligibleToWalk(Vector2 input)
+        {
+            return input.x > 0.01f || input.y > 0.01;
+        }
+
+        protected override void HandleInput()
+        {
         }
 
         #endregion

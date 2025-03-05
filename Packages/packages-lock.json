@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "com.freyja.event-system": {
+      "version": "https://github.com/winartodev/Freyja-Event-System.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "353047e23c4126705b5df95e614751b8f86f3a2d"
+    },
+    "com.freyja.input-system": {
+      "version": "https://github.com/winartodev/Freyja-Input-System.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.freyja.event-system": "1.0.0",
+        "com.freyja.logger": "1.0.0",
+        "com.unity.inputsystem": "1.5.1"
+      },
+      "hash": "d04ed516c80a15b1c39ba7f7a54cbe453daa88f5"
+    },
     "com.freyja.logger": {
       "version": "https://github.com/winartodev/Freyja-Logger.git",
       "depth": 0,

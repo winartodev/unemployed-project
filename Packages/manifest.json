@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.freyja.event-system": "https://github.com/winartodev/Freyja-Event-System.git",
+    "com.freyja.input-system": "https://github.com/winartodev/Freyja-Input-System.git",
     "com.freyja.logger": "https://github.com/winartodev/Freyja-Logger.git",
     "com.freyja.project-setup-automaion": "https://github.com/winartodev/Freyja-Project-Setup-Automation.git",
     "com.unity.2d.animation": "7.1.2",

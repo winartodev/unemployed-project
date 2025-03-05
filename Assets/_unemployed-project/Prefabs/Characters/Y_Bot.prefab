@@ -72,8 +72,8 @@ Animator:
   m_GameObject: {fileID: 6517046668732593702}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3133afcf682b87c42b9733eb1fbc740a, type: 2}
-  m_CullingMode: 0
+  m_Controller: {fileID: 9100000, guid: 0962bf1d267ce44449b4f5facb32adb4, type: 2}
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -83,20 +83,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5552288710976853676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6517046668732593702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ed16b2a737149cda1464dda26e8acab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CharacterAnimation: {fileID: 5639371879493721484}
---- !u!114 &5639371879493721484
+--- !u!114 &3399151943087310186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +96,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Animator: {fileID: 4990667460110014323}
---- !u!114 &8895041645551064328
+--- !u!114 &5873179925933050306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517046668732593702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed16b2a737149cda1464dda26e8acab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CharacterAnimation: {fileID: 3399151943087310186}
+--- !u!114 &4460279198172999055
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,4 +121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb3812e02e44663bea492efdeb2c9c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CharacterAnimation: {fileID: 5639371879493721484}
+  m_CharacterAnimation: {fileID: 3399151943087310186}

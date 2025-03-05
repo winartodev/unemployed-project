@@ -8,8 +8,8 @@ namespace UnemployedProject.Runtime
     {
         #region Constants
 
-        private static readonly int Walking = Animator.StringToHash("IsWalking");
         private static readonly int Running = Animator.StringToHash("IsRunning");
+        private static readonly int WalkingVelocity = Animator.StringToHash("WalkingVelocity");
 
         #endregion
 
@@ -27,14 +27,19 @@ namespace UnemployedProject.Runtime
 
         #region Methods
 
-        public void StartWalking(bool value)
+        public void SetWalkingVelocity(float value)
         {
-            m_Animator.SetBool(Walking, value);
+            if (value == 0.0f)
+            {
+                StartRunning(false);
+            }
+
+            m_Animator.SetFloat(WalkingVelocity, value);
         }
 
-        public bool GetWalkingStatus()
+        public float GetWalkingVelocity()
         {
-            return m_Animator.GetBool(Walking);
+            return m_Animator.GetFloat(WalkingVelocity);
         }
 
         public bool GetRunningStatus()
@@ -45,6 +50,18 @@ namespace UnemployedProject.Runtime
         public void StartRunning(bool value)
         {
             m_Animator.SetBool(Running, value);
+        }
+
+        private void Reset()
+        {
+            #if UNITY_EDITOR
+
+            if (m_Animator == null)
+            {
+                m_Animator = GetComponent<Animator>();
+            }
+
+            #endif
         }
 
         #endregion
